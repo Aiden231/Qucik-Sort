@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Qucik Sort", "Qucik Sort\Qucik Sort.vcxproj", "{ACBFD5C0-72FB-4007-BD1E-F51A6F00D098}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACBFD5C0-72FB-4007-BD1E-F51A6F00D098}.Debug|x64.ActiveCfg = Debug|x64
+		{ACBFD5C0-72FB-4007-BD1E-F51A6F00D098}.Debug|x64.Build.0 = Debug|x64
+		{ACBFD5C0-72FB-4007-BD1E-F51A6F00D098}.Debug|x86.ActiveCfg = Debug|Win32
+		{ACBFD5C0-72FB-4007-BD1E-F51A6F00D098}.Debug|x86.Build.0 = Debug|Win32
+		{ACBFD5C0-72FB-4007-BD1E-F51A6F00D098}.Release|x64.ActiveCfg = Release|x64
+		{ACBFD5C0-72FB-4007-BD1E-F51A6F00D098}.Release|x64.Build.0 = Release|x64
+		{ACBFD5C0-72FB-4007-BD1E-F51A6F00D098}.Release|x86.ActiveCfg = Release|Win32
+		{ACBFD5C0-72FB-4007-BD1E-F51A6F00D098}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6EA3ED8-22AF-4FA4-BBE4-47F9B72D4DF4}
+	EndGlobalSection
+EndGlobal
