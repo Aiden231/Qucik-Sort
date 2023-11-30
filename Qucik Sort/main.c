@@ -94,6 +94,19 @@ int main()
 		move[i] = move_count;
 		compare[i] = compare_count;
 	}
+
+	int sum = 0;
+	for (int i = 0; i < MAX_SIZE; i++) {
+		sum += move[i];
+	}
+	move_average = sum / MAX_SIZE;
+	
+	sum = 0;
+	for (int i = 0; i < MAX_SIZE; i++) {
+		sum += compare[i];
+	}
+	 compare_average = sum / MAX_SIZE;
+
 	printf("Move Average : %f\n", move_average);
 	printf("Compare Average : %f\n", compare_average);
 
