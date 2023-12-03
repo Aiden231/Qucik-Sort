@@ -1,0 +1,2 @@
+# Qucik Sort
+![](./result.png)
