@@ -5,7 +5,7 @@
 #define MAX_SIZE 20
 #define SWAP(x,y,t) ((t)=(x),(x)=(y),(y)=(t))
 
-int partiton(int list[], int left, int right,int* move_count, int* compare_count, int print) {
+int partiton(int list[], int left, int right, int* move_count, int* compare_count, int print) {
 	int pivot;
 	int temp = 0;
 	int low, high;
@@ -43,11 +43,12 @@ int partiton(int list[], int left, int right,int* move_count, int* compare_count
 	return high;
 }
 
-void quick_sort(int list[], int left, int right,int* move_count, int* compare_count, int print) {
+// 퀵 정렬
+void quick_sort(int list[], int left, int right, int* move_count, int* compare_count, int print) {
 	if (left < right) {
 		int q = partiton(list, left, right, move_count, compare_count, print);
-		quick_sort(list, left, q - 1,move_count, compare_count,print);
-		quick_sort(list, q + 1, right,move_count,compare_count,print);
+		quick_sort(list, left, q - 1, move_count, compare_count, print);
+		quick_sort(list, q + 1, right, move_count, compare_count, print);
 	}
 }
 
@@ -77,14 +78,15 @@ int main()
 
 	printf("Quick Sort\n");
 
-	quick_sort(list, 0, n - 1, &move_count,&compare_count,1);
+	quick_sort(list, 0, n - 1, &move_count, &compare_count, 1);
 	move[0] = move_count;
 	compare[0] = compare_count;
 
+	// 반복
 	for (int i = 1; i < MAX_SIZE; i++) {
 		move_count = 0;
 		compare_count = 0;
-		
+
 		// 난수 리스트 생성
 		for (int i = 0; i < MAX_SIZE; i++) {
 			list[i] = rand() % 100;
@@ -94,6 +96,21 @@ int main()
 		move[i] = move_count;
 		compare[i] = compare_count;
 	}
+
+	// 평균 구하기
+	int sum = 0;
+	for (int i = 0; i < MAX_SIZE; i++) {
+		sum += move[i];
+	}
+	move_average = sum / MAX_SIZE;
+
+	sum = 0;
+	for (int i = 0; i < MAX_SIZE; i++) {
+		sum += compare[i];
+	}
+	compare_average = sum / MAX_SIZE;
+	
+	// 출력
 	printf("Move Average : %f\n", move_average);
 	printf("Compare Average : %f\n", compare_average);
 
