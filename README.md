@@ -1,4 +1,4 @@
-selection sort / 이동 : 19 / 비교 : 190
+selection sort / 이동 : 19 / 비교 : 190\n
 insertion sort / 이동 : 119 / 비교 : 119
 bubble sort / 이동 : 79 / 비교 : 190
 shell sort / 이동 : 60 / 비교 : 35
