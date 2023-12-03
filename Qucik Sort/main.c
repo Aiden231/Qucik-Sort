@@ -43,7 +43,7 @@ int partiton(int list[], int left, int right, int* move_count, int* compare_coun
 	return high;
 }
 
-// Äü Á¤·Ä
+// í€µ ì •ë ¬
 void quick_sort(int list[], int left, int right, int* move_count, int* compare_count, int print) {
 	if (left < right) {
 		int q = partiton(list, left, right, move_count, compare_count, print);
@@ -64,7 +64,7 @@ int main()
 	double move_average = 0;
 	double compare_average = 0;
 
-	// ³­¼ö ¸®½ºÆ® »ı¼º
+	// ë‚œìˆ˜ ë¦¬ìŠ¤íŠ¸ ìƒì„±
 	srand(time(NULL));
 	for (int i = 0; i < MAX_SIZE; i++) {
 		list[i] = rand() % 100;
@@ -82,12 +82,12 @@ int main()
 	move[0] = move_count;
 	compare[0] = compare_count;
 
-	// ¹İº¹
+	// ë°˜ë³µ
 	for (int i = 1; i < MAX_SIZE; i++) {
 		move_count = 0;
 		compare_count = 0;
 
-		// ³­¼ö ¸®½ºÆ® »ı¼º
+		// ë‚œìˆ˜ ë¦¬ìŠ¤íŠ¸ ìƒì„±
 		for (int i = 0; i < MAX_SIZE; i++) {
 			list[i] = rand() % 100;
 		}
@@ -97,7 +97,7 @@ int main()
 		compare[i] = compare_count;
 	}
 
-	// Æò±Õ ±¸ÇÏ±â
+	// í‰ê·  êµ¬í•˜ê¸°
 	int sum = 0;
 	for (int i = 0; i < MAX_SIZE; i++) {
 		sum += move[i];
@@ -110,7 +110,7 @@ int main()
 	}
 	compare_average = sum / MAX_SIZE;
 	
-	// Ãâ·Â
+	// ì¶œë ¥
 	printf("Move Average : %f\n", move_average);
 	printf("Compare Average : %f\n", compare_average);
 
